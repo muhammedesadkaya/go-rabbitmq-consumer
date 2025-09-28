@@ -1,0 +1,15 @@
+rabbitmq:
+  host: [ "localhost" ]
+  port: 5672
+  username: "user"
+  password: "password"
+
+postgresql:
+  username: "sa"
+  password: "Sa147258369"
+  host: "golang-example.cif7pauc0jow.eu-central-1.rds.amazonaws.com"
+  port: 5432
+  dbname: "mydb"
+
+mongodb:
+  address: "mongodb://bergen:9aa1972c80aab3d691c3@212.68.45.62"

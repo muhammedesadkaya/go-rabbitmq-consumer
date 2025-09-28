@@ -1,0 +1,75 @@
+definitions:
+  user.UserRequest:
+    properties:
+      email:
+        type: string
+      fullName:
+        type: string
+      gender:
+        type: string
+      identity:
+        type: string
+      phoneNumber:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /v1/user:
+    post:
+      description: Insert User
+      parameters:
+      - description: request
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/user.UserRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      summary: Insert User
+      tags:
+      - User
+  /v1/users:
+    get:
+      description: Get Users
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      summary: Get Users
+      tags:
+      - User
+swagger: "2.0"
