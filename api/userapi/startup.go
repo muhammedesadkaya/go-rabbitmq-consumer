@@ -36,9 +36,9 @@ func Init(cmd *cobra.Command, args []string) error {
 	//var postgreClient = postgresql.NewClient(config, "information_schema")
 	//
 	//var db *sql.DB
-	//var esad error
-	//if db, esad = postgreClient.OpenConnection(); esad != nil {
-	//	fmt.Println(esad)
+	//var test error
+	//if db, test = postgreClient.OpenConnection(); test != nil {
+	//	fmt.Println(test)
 	//}
 	//
 	//defer postgreClient.CloseConnection(db)
